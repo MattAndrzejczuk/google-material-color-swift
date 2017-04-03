@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
 
     func randomlyChangeViewBackgroudColorWithAnimation() {
-        UIView.animateWithDuration(0.5, delay: 0.5, options: .CurveEaseOut,
+        UIView.animate(withDuration: 0.5, delay: 0.5, options: .curveEaseOut,
                 animations: {
                     self.view.backgroundColor = self.getRandomColorFromPalette()
                 },
